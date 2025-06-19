@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 99vw;
+    background-color: #ffffff;
+}
+section{
+    padding-top: 10vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+}
+.header-img{
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-img > h1{
+    font-size: 4vw;
+}
+div.info-con{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2.5vw;
+    
+}
+.all-info{
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.input-info{
+    max-width: 80vw;
+    margin: 2vw 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    
+}
+.grade{
+    height: 30px;
+}
+.input-info label{
+    font-size: 1vw;
+}
+input[type="text"],.searchable-select{
+    max-width: 40vw;
+    height: 25px;
+
+}
+
+.info-que-all{
+    z-index: 1;
+    width: 80%;
+    height: auto;
+    position: absolute;
+    background-color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 10vw;
+}
+
+/* Style for the labels */
+label {
+  margin-left: 5px; /* Add some space between the radio button and the label */
+  font-size: 16px; /* Adjust the font size */
+}
+.con-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    position: relative;
+    height: 60px;
+    bottom: 0;
+}
+.btn{
+    
+    font-size: 1.2vw;
+    width: 9vw;
+    height: 2.2vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50vw;
+    border:1px solid black;
+}
+
+@media  screen and (max-width: 1324px){
+    .all-info{
+        width: 80%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .header-img > h1{
+        font-size: 6vw;
+    }
+    .question{
+        text-align: center;
+        font-size: 2.8vw;
+    }
+    .input-info label{
+        font-size: 2.4vw;
+    }
+    .btn{
+        font-size: 2.2vw;
+        width: 13vw;
+        height: 3.2vw;
+    }
+}
+
+@media  screen and (max-width: 750px){
+    .all-info{
+        width: 90%;
+    }
+    .content{
+        margin-top: 15vw;
+    }
+
+    .header-img > h1{
+        font-size: 6.5vw;
+    }
+    .question{
+        font-size: 3vw;
+    }
+    .input-info label{
+        font-size: 3.2vw;
+    }
+    div.con{
+        height: auto;
+        margin-top: 7px;
+    }
+    input[type="radio"].a0 {
+        width: 5vw;
+        height: 5vw;
+        margin: 0 0.8vw;
+    }
+    input[type="radio"].a1 {
+        width: 6vw;
+        height: 6vw;
+        margin: 0 0.8vw;
+    }
+    input[type="radio"].a2 {
+        width: 7vw;
+        height: 7vw;
+        margin: 0 0.8vw;
+    }
+    input[type="radio"].a3 {
+        width: 8vw;
+        height: 8vw;
+        margin: 0 0.8vw;
+    }
+    .ans{
+        margin: 10vw 0 0 0;
+    }
+    .btn{
+        font-size: 3.2vw;
+        width: 17vw;
+        height: 5.5vw;
+    }
+
+}
+@media  screen and (max-width: 450px){
+    .btn{
+        font-size: 4.6vw;
+        width: 20vw;
+        height: 7.5vw;
+    }
+    .input-info label{
+        font-size: 4vw;
+    }
+} 

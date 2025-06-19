@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  max-width: 100vw;
+  background-color: #ffffff;
+}
+section{
+  padding-top: 10vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.content{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4vw;
+  background-color: #ffffff;
+}
+.header-img{
+  width: 100%;
+  height: 10vw;
+  background-image: url("../img/bg.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-img > h1{
+  font-size: 4vw;
+}
+div.info-con{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2.5vw;
+  
+}
+.all-info{
+  width: 1150px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+.input-info{
+  max-width: 80vw;
+  margin: 2vw 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  
+}
+.input-info label{
+  font-size: 1vw;
+}
+input[type="text"],.searchable-select{
+  max-width: 40vw;
+  height: 25px;
+
+}
+.question{
+  text-align: center;
+  font-size: 1.2vw;
+}
+.que-all{
+  z-index: 1;
+  width: 80%;
+  height: auto;
+  position: absolute;
+  background-color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 15vw;
+}
+.info-que-all{
+  z-index: 1;
+  width: 80%;
+  height: auto;
+  position: absolute;
+  background-color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 10vw;
+}
+.inactive{
+  display: none;
+}
+/* Style for radio buttons */
+input[type="radio"].a0 {
+    /* Hide the default radio buttons */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Set the desired dimensions */
+    width: 2.8vw;
+    height: 2.8vw;
+    /* Style the border */
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    /* Style the inner circle (dot) */
+    background-color: #fff;
+    /* Position the dot in the center */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 0.3vw;
+}
+input[type="radio"].a1 {
+    /* Hide the default radio buttons */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Set the desired dimensions */
+    width: 3.2vw;
+    height: 3.2vw;
+    /* Style the border */
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    /* Style the inner circle (dot) */
+    background-color: #fff;
+    /* Position the dot in the center */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 0.3vw;
+}
+input[type="radio"].a2 {
+    /* Hide the default radio buttons */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Set the desired dimensions */
+    width: 3.6vw;
+    height: 3.6vw;
+    /* Style the border */
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    /* Style the inner circle (dot) */
+    background-color: #fff;
+    /* Position the dot in the center */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 0.3vw;
+}
+input[type="radio"].a3 {
+    /* Hide the default radio buttons */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Set the desired dimensions */
+    width: 4vw;
+    height: 4vw;
+    /* Style the border */
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    /* Style the inner circle (dot) */
+    background-color: #fff;
+    /* Position the dot in the center */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 0.3vw;
+}
+  
+/* Style for the inner dot when the radio button is checked */
+input[type="radio"]:checked {
+  background-color: #8bfac6;
+}
+
+/* Style for the labels */
+label {
+  margin-left: 5px; /* Add some space between the radio button and the label */
+  font-size: 16px; /* Adjust the font size */
+}
+.ans{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vw 0;
+}
+.ans > p{
+  margin: 0 20px;
+}
+.active{
+  visibility: visible;
+}
+div.con{
+  width: 100%;
+  height: 15vw;
+  border-bottom: 0.2px solid rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+footer{
+  position: relative;
+  height: 60px;
+  bottom: 0;
+}
+div.page{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+.btn{
+    
+    font-size: 1.2vw;
+    width: 9vw;
+    height: 2.2vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50vw;
+    border:1px solid black;
+}
+.btn:hover{
+  background-color: rgba(248, 0, 0, 0.887)
+}
+@media  screen and (max-width: 1324px){
+  .all-info{
+    width: 80%;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .header-img > h1{
+    font-size: 6vw;
+  }
+  .question{
+    text-align: center;
+    font-size: 2.8vw;
+  }
+  .input-info label{
+    font-size: 2.4vw;
+  }
+  .btn{
+    font-size: 2.2vw;
+    width: 13vw;
+    height: 3.2vw;
+  }
+}
+
+@media  screen and (max-width: 750px){
+  .all-info{
+    width: 90%;
+  }
+  .content{
+    margin-top: 15vw;
+  }
+
+  .header-img > h1{
+    font-size: 6.5vw;
+  }
+  .question{
+    font-size: 3vw;
+  }
+  .input-info label{
+    font-size: 3.2vw;
+  }
+  div.con{
+    height: auto;
+    margin-top: 7px;
+  }
+  input[type="radio"].a0 {
+    width: 5vw;
+    height: 5vw;
+    margin: 0 0.8vw;
+  }
+  input[type="radio"].a1 {
+    width: 6vw;
+    height: 6vw;
+    margin: 0 0.8vw;
+  }
+  input[type="radio"].a2 {
+    width: 7vw;
+    height: 7vw;
+    margin: 0 0.8vw;
+  }
+  input[type="radio"].a3 {
+    width: 8vw;
+    height: 8vw;
+    margin: 0 0.8vw;
+  }
+  .ans{
+    margin: 10vw 0 0 0;
+  }
+  .btn{
+    font-size: 3.2vw;
+    width: 17vw;
+    height: 5.5vw;
+  }
+
+}
+@media  screen and (max-width: 450px){
+  .btn{
+    font-size: 4.6vw;
+    width: 20vw;
+    height: 7.5vw;
+  }
+  .input-info label{
+    font-size: 4vw;
+  }
+} 

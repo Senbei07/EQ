@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: borAder-box;
+    font-family: "poppins",sans-serif;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background-image: url("../img/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section{
+    width: 1200px;
+    background-color: #fefefe;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+.seac{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 400px;
+}
+.search{
+    width: 200px;
+    height: 30px;
+}
