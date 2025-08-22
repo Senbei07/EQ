@@ -1,6 +1,6 @@
 <?php
     include('config.php');
-    include('function.php');
+
     
 
     $eq_score = $_SESSION['eq_score']; // session เก็บค่าคะแนนบททดสอบ EQ แต่ละด้านย่อย
